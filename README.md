@@ -67,3 +67,9 @@ Weather predictions are based on historical data and probabilistic modeling. Res
 ## License
 
 [MIT License](LICENSE)
+
+## Author
+
+Zaheen M Vora
+Computer Engineering Student | Aspiring Data Science and ML Engineer
+
