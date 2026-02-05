@@ -1,63 +1,69 @@
-Weather Forecast Ally 🌦
+# Weather Forecast Ally 🌦
 
-An AI-powered weather forecasting web application built using:
+A Machine Learning-based weather prediction web application that forecasts the probability of rain using live weather data and a trained Random Forest model. This project integrates real-time API data with predictive modeling to provide weather insights and intelligent activity recommendations.
 
-Streamlit
+## Features
 
-Random Forest (Scikit-Learn)
+- Live weather data using OpenWeather API  
+- Rain prediction for tomorrow using Random Forest (≈88% accuracy)  
+- Probability confidence visualization  
+- Intelligent weather-based recommendations  
+- Interactive and responsive Streamlit interface  
 
-OpenWeather API
+## Technologies Used
 
-Python
+- Python  
+- Scikit-learn (Random Forest Classifier)  
+- Pandas  
+- Joblib  
+- PyOWM (OpenWeather API wrapper)  
+- Streamlit  
 
-🚀 Features
+## Getting Started
 
-Live weather data using OpenWeather API
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/weather-forecast-ally.git
+   cd weather-forecast-ally
+   ```
 
-Rain prediction using ML model (88% accuracy)
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Probability confidence bar
+3. **Add OpenWeather API key:**
 
-Intelligent activity recommendation system
+   Create a folder named `.streamlit` and inside it create a file called `secrets.toml`:
 
-Clean UI with responsive cards
+   ```
+   OWM_API_KEY = "your_api_key_here"
+   ```
 
-🧠 Machine Learning
+4. **Run the application:**
+   ```bash
+   streamlit run app.py
+   ```
 
-Random Forest Classifier
+5. **Access the app:**
+   The application will automatically open in your browser.
 
-Stratified Train-Test Split
+## Model Details
 
-Feature Engineering
+- Model: Random Forest Classifier  
+- Train-Test Split: Stratified (80-20)  
+- Feature Engineering: Temperature, Humidity, Wind Speed, RainToday  
+- Accuracy: ~88%  
+- Evaluated using Classification Report  
 
-Accuracy: ~88%
+## Contributing
 
-📂 Project Structure
-weather-predictor/
-│
-├── app.py
-├── train_model.py
-├── rain_india.csv
-├── requirements.txt
-└── README.md
+Contributions are welcome. Feel free to open issues or submit pull requests for improvements.
 
-⚙ Installation
-git clone https://github.com/yourusername/weather-predictor.git
-cd weather-predictor
-pip install -r requirements.txt
-streamlit run app.py
+## Disclaimer
 
-🔑 API Setup
+Weather predictions are based on historical data and probabilistic modeling. Results may not exactly match official meteorological forecasts.
 
-Create a .streamlit/secrets.toml file:
+## License
 
-OWM_API_KEY = "your_api_key_here"
-
-
-Get API key from:
-https://openweathermap.org/api
-
-👨‍💻 Author
-
-Zaheen M Vora
-Aspiring Data Scientist & ML Engineer
+[MIT License](LICENSE)
