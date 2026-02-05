@@ -1,0 +1,8 @@
+streamlit
+pyowm
+pandas
+numpy
+scikit-learn
+joblib
+
+
